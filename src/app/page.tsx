@@ -165,13 +165,22 @@ export default function HomePage() {
       description:
         "working on building AI tools that can be integrated into company's various products",
     },
-    // {
-    //   name: "dimension",
-    //   link: "https://dimension.dev",
-    //   position: "full-stack engineer (nov 2023 - jan 2024)",
-    //   description:
-    //     "contributed to a large-scale t3 stack app. worked on real-time presence and chat features",
-    // },
+    {
+      name: "let's enkindle",
+      link: "https://letsenkindle.com/",
+      position: "app dev intern (june 2023 - aug 2023)",
+      description:
+        "contributed in the deveopment of react native apps and improved the UI",
+    },
+  ] satisfies ExperienceItem[];
+
+  const educationItems = [
+    {
+      name: "pandit deendayal energy university",
+      link: "https://www.pdpu.ac.in/",
+      position: "b.tech in cse (2020-2024)",
+      description:"grade: 9.11 cgpa"
+    },
   ] satisfies ExperienceItem[];
 
   const projectItems = [
@@ -232,6 +241,7 @@ export default function HomePage() {
       <div className="my-8 grid grid-cols-1 gap-8 md:grid-cols-2">
         <ExperienceSection title="work" items={workItems} />
         <ExperienceSection title="projects" items={projectItems} />
+        <ExperienceSection title="education" items={educationItems} />
       </div>
 
       {/* <h3 className="mb-6 text-xl font-medium">blog</h3> */}

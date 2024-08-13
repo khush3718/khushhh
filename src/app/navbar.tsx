@@ -6,7 +6,7 @@ import { clx } from "~/utils";
 
 const navItems = {
   "/": {
-    name: "home",
+    name: "about me",
   },
 //   "/blog": {
 //     name: "blog",
