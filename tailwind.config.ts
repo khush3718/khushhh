@@ -6,7 +6,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        // sans: ["var(--font-geist-sans)", ...fontFamily.sans],
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+        mono: ["var(--font-geist-mono)", ...fontFamily.mono],
+        sans1: ["Fira Code", ...fontFamily.sans],
+        mono1: ["Fira Code", ...fontFamily.mono],
       },
     },
   },
