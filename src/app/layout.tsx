@@ -56,11 +56,11 @@ export const metadata: Metadata = {
     "max-image-preview": "large",
     "max-snippet": -1,
   },
-  twitter: {
-    title: "Shoubhit Dash",
-    card: "summary_large_image",
-    creator: "@nexxeln",
-  },
+  // twitter: {
+  //   title: "Khush Shah",
+  //   card: "summary_large_image",
+  //   creator: "@nexxeln",
+  // },
 };
 
 export default function RootLayout({

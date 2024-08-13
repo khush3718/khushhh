@@ -163,7 +163,7 @@ export default function HomePage() {
       link: "https://adrtatech.com/",
       position: "jr. software engineer (june 2024 - present)",
       description:
-        "leading engineering to build ai agents for automating repetitive tasks in existing software",
+        "working on building AI tools that can be integrated into company's various products",
     },
     // {
     //   name: "dimension",
