@@ -1,7 +1,5 @@
 import clsx from 'clsx';
-import NextLink, {
-  type LinkProps as NextLinkProps,
-} from 'next/link';
+import NextLink, { type LinkProps as NextLinkProps } from 'next/link';
 import React from 'react';
 
 type LinkProps = NextLinkProps & {
@@ -38,7 +36,7 @@ export const Link = ({
         target: '_blank',
         rel: 'noopener noreferrer',
       })}
-      {...restProps}
+      {...(restProps as NextLinkProps)}
     >
       {leftIcon && iconWithStyles(leftIcon, size)}
       {children}
