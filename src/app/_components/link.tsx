@@ -2,7 +2,8 @@ import clsx from 'clsx';
 import NextLink, { type LinkProps as NextLinkProps } from 'next/link';
 import React from 'react';
 
-type LinkProps = NextLinkProps & {
+type LinkProps = Omit<NextLinkProps, 'href'> & {
+  href: NextLinkProps['href']; // Ensures `href` is required
   leftIcon?: React.ReactElement;
   rightIcon?: React.ReactElement;
   size?: 'sm' | 'base' | 'lg' | 'xl';
@@ -20,10 +21,12 @@ export const Link = ({
   children,
   external,
   className,
+  href,
   ...restProps
 }: LinkProps) => {
   return (
     <NextLink
+      href={href} // Make sure `href` is explicitly passed
       className={clsx(
         'group flex w-fit items-center gap-2 ',
         `text-${size}`,
@@ -36,7 +39,7 @@ export const Link = ({
         target: '_blank',
         rel: 'noopener noreferrer',
       })}
-      {...(restProps as NextLinkProps)}
+      {...restProps}
     >
       {leftIcon && iconWithStyles(leftIcon, size)}
       {children}
