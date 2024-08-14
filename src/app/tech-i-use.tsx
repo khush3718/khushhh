@@ -5,7 +5,7 @@ import { techUsed } from './data/tech-used';
 
 export const TechIUse = () => {
   return (
-    <section className="mt-8 px-1">
+    <section className="mt-8 px-2">
       {/* <p className="text-xl">Tech I use</p> */}
 
       <div className="mt-1 grid grid-cols-3 gap-2 sm:grid-cols-5">

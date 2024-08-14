@@ -14,7 +14,8 @@ import {
   TbBrandCpp,
   TbBrandJavascript,
   TbBrandDjango,
-  TbBrandAws
+  TbBrandAws,
+  TbSql
 } from 'react-icons/tb';
 
 export const techUsed = [
@@ -31,8 +32,8 @@ export const techUsed = [
     Icon: IoLogoNodejs,
   },
   {
-    title: 'MySQL',
-    Icon: TbBrandMysql,
+    title: 'SQL',
+    Icon: TbSql,
   },
   {
     title: 'Javascript',
