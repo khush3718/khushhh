@@ -32,10 +32,11 @@ import { GeistMono } from "geist/font/mono";
 import { clx } from "~/utils";
 import { Navbar } from "./navbar";
 import { Footer } from "./footer";
+import { TechIUse } from "./tech-i-use";
 import { ViewTransitions } from "next-view-transitions";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.nexxel.dev"),
+  metadataBase: new URL("https://khushhh.vercel.app/"),
   title: {
     default: "Khush Shah",
     template: "%s | Khush Shah",
@@ -84,7 +85,9 @@ export default function RootLayout({
         <body className="mx-4 mb-40 mt-8 flex max-w-2xl flex-col antialiased md:flex-row lg:mx-auto">
           <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0">
             <Navbar />
+            
             {children}
+            {/* <TechIUse/> */}
             <Footer/>
           </main>
         </body>

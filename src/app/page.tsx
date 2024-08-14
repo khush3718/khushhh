@@ -55,6 +55,7 @@
 
 
 import { Link } from "next-view-transitions";
+import { TechIUse } from "./tech-i-use";
 // import { getBlogPosts } from "~~/blog";
 
 function UpRightArrowIcon() {
@@ -244,8 +245,8 @@ export default function HomePage() {
         <ExperienceSection title="education" items={educationItems} />
       </div>
 
-      {/* <h3 className="mb-6 text-xl font-medium">blog</h3> */}
-      <div className="flex flex-col gap-4">
+      <h3 className="mb-2 text-xl font-medium">technologies i use</h3>
+      <div className="flex flex-col gap-2">
         {/* {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="">
             <div className="flex w-full justify-between">
@@ -271,6 +272,7 @@ export default function HomePage() {
         >
           all posts →
         </Link> */}
+        <TechIUse/>
       </div>
 
       <h3 className="mt-8 text-xl font-medium">connect with me</h3>
