@@ -4,8 +4,8 @@ import React, { ComponentPropsWithoutRef } from 'react';
 
 type LinkProps = Omit<NextLinkProps, 'href'> & {
   href: NextLinkProps['href']; // Ensures `href` is required
-  leftIcon?: React.ReactElement;
-  rightIcon?: React.ReactElement;
+  // leftIcon?: React.ReactElement;
+  // rightIcon?: React.ReactElement;
   size?: 'sm' | 'base' | 'lg' | 'xl';
   variant?: 'primary' | 'link' | 'icon-button';
   children?: React.ReactNode;
@@ -14,8 +14,8 @@ type LinkProps = Omit<NextLinkProps, 'href'> & {
 };
 
 export const Link = ({
-  leftIcon,
-  rightIcon,
+  // leftIcon,
+  // rightIcon,
   size = 'base',
   variant = 'primary',
   children,
@@ -23,7 +23,7 @@ export const Link = ({
   className,
   href,
   ...restProps
-}: LinkProps & ComponentPropsWithoutRef<'a'>) => { // Type restProps appropriately
+}: LinkProps ) => { // Type restProps appropriately
   return (
     <NextLink
       href={href} // Make sure `href` is explicitly passed
@@ -41,24 +41,24 @@ export const Link = ({
       })}
       {...restProps}
     >
-      {leftIcon && iconWithStyles(leftIcon, size)}
+      {/* {leftIcon && iconWithStyles(leftIcon, size)} */}
       {children}
-      {rightIcon && iconWithStyles(rightIcon, size)}
+      {/* {rightIcon && iconWithStyles(rightIcon, size)} */}
     </NextLink>
   );
 };
 
-const iconWithStyles = (
-  icon: React.ReactElement,
-  size: 'sm' | 'base' | 'lg' | 'xl'
-) =>
-  React.cloneElement(icon, {
-    className: clsx(
-      'bg-rose-100/30 p-1',
-      'shadow-md rounded-md',
-      'group-hover:scale-[1.2] group-hover:shadow-rose-500/40 group-active:translate-y-[2px]',
-      'transition-all duration-300 ease-out'
-    ),
-    size: size === 'sm' ? 24 : 32,
-    ...icon.props,
-  });
+// const iconWithStyles = (
+//   icon: React.ReactElement,
+//   size: 'sm' | 'base' | 'lg' | 'xl'
+// ) =>
+//   React.cloneElement(icon, {
+//     className: clsx(
+//       'bg-rose-100/30 p-1',
+//       'shadow-md rounded-md',
+//       'group-hover:scale-[1.2] group-hover:shadow-rose-500/40 group-active:translate-y-[2px]',
+//       'transition-all duration-300 ease-out'
+//     ),
+//     size: size === 'sm' ? 24 : 32,
+//     ...icon.props,
+//   });
