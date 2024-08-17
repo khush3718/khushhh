@@ -158,6 +158,9 @@ function ExperienceSection({
   );
 }
 
+
+
+
 export default function HomePage() {
   const workItems = [
     {
@@ -242,7 +245,7 @@ export default function HomePage() {
 
       <div className="my-8 grid grid-cols-1 gap-8 md:grid-cols-2">
         <ExperienceSection title="work" items={workItems} />
-        {/* <ExperienceSection title="projects" items={projectItems} /> */}
+        
         <ExperienceSection title="education" items={educationItems} />
       </div>
 

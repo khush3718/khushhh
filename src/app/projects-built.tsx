@@ -47,7 +47,7 @@ const ProjectCard = ({
           <Link
             href={prodLink}
             external
-            rightIcon={<FiExternalLink size={22} />}
+            // rightIcon={<FiExternalLink size={22} />}
             size="lg"
             className="w-fit font-semibold"
           >
