@@ -252,13 +252,13 @@ export default function HomePage() {
       </div>
 
       <h3 className="mt-2 text-xl font-medium">projects</h3>
-      <hr className="my-3 w-28 border-t-2 border-white rounded-full" />
+      <hr className="mt-3 w-28 border-t-2 border-white rounded-full" />
       <div className="flex flex-col gap-2">
         <ThingsIveBuilt/>
       </div>
 
       <h3 className="mb-2 mt-6 text-xl font-medium">technologies i use</h3>
-      <hr className="my-3 w-36 border-t-2 border-white rounded-full" />
+      <hr className="mt-3 w-36 border-t-2 border-white rounded-full" />
       <div className="flex flex-col gap-2">
         <TechIUse/>
       </div>
@@ -278,7 +278,7 @@ export default function HomePage() {
             <UpRightArrowIcon />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
@@ -288,7 +288,7 @@ export default function HomePage() {
             <p className="mr-1 h-7">x.com</p>
             <UpRightArrowIcon />
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
