@@ -4,7 +4,6 @@ export const projects = [
       description:
         'llm based chatapp to assist users with their mental health issues',
       gitLink: 'https://github.com/khush3718',
-      prodLink: "",
       techStack: [
         'Python',
         'PyTorch',
@@ -18,7 +17,6 @@ export const projects = [
       description:
         'utilizes machine learning to analyze facial expressions, providing instantaneous emotion recognition',
       gitLink: 'https://github.com/khush3718/Real_Time_emotion_detection',
-      prodLink: "",
       techStack: [
         'Python',
         'OpenCV',
@@ -40,7 +38,6 @@ export const projects = [
       description:
         'terminal based app to simulate rocket launch into the orbit',
       gitLink: 'https://github.com/khush3718/Rocketify',
-      prodLink: "",
       techStack: [
         'Python',
       ],
