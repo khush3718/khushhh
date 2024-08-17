@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import Image from 'next/image';
 import NextLink from 'next/link';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
@@ -9,7 +8,7 @@ import { projects } from './data/projects';
 
 export const ThingsIveBuilt = () => {
   return (
-    <section className="mt-6 mb-2  px-2">
+    <section className="mt-6 mb-2 px-2">
       <div className="mt-5 grid grid-cols-1 gap-2">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
@@ -19,7 +18,14 @@ export const ThingsIveBuilt = () => {
   );
 };
 
-type ProjectCardProps = (typeof projects)[0];
+// Define an explicit type for the ProjectCard props
+type ProjectCardProps = {
+  title: string;
+  description: string;
+  gitLink: string;
+  prodLink?: string; // Optional if some projects might not have it
+  techStack: string[];
+};
 
 const ProjectCard = ({
   title,
