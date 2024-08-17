@@ -10,8 +10,6 @@ import { projects } from './data/projects';
 export const ThingsIveBuilt = () => {
   return (
     <section className="mt-6 mb-2  px-2">
-      {/* <p className="text-xl">Things I&apos;ve built</p> */}
-
       <div className="mt-5 grid grid-cols-1 gap-2">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
@@ -47,24 +45,10 @@ const ProjectCard = ({
             size="lg"
             className="w-fit font-semibold"
           >
-            {/* <Image
-              src={thumb}
-              alt={`${title} logo`}
-              width="32"
-              height="32"
-              className="rounded-md"
-            /> */}
             <span>{title}</span>
           </Link>
         ) : (
           <p className="group flex w-fit items-center gap-2 text-lg font-semibold font-mono">
-            {/* <Image
-              src={thumb}
-              alt={`${title} logo`}
-              width="32"
-              height="32"
-              className="rounded-md"
-            /> */}
             <span>{title}</span>
           </p>
         )}
@@ -84,6 +68,7 @@ const ProjectCard = ({
 
       <NextLink
         href={gitLink}
+        passHref
         target="_blank"
         rel="noopener noreferrer"
         className={clsx(
