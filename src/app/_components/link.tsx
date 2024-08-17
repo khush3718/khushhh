@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import NextLink, { type LinkProps as NextLinkProps } from 'next/link';
-import React from 'react';
+import React, { ComponentPropsWithoutRef } from 'react';
 
 type LinkProps = Omit<NextLinkProps, 'href'> & {
   href: NextLinkProps['href']; // Ensures `href` is required
@@ -23,7 +23,7 @@ export const Link = ({
   className,
   href,
   ...restProps
-}: LinkProps) => {
+}: LinkProps & ComponentPropsWithoutRef<'a'>) => { // Type restProps appropriately
   return (
     <NextLink
       href={href} // Make sure `href` is explicitly passed
