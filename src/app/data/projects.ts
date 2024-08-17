@@ -29,7 +29,7 @@ export const projects = [
       title: 'quiz-vista',
       description: 'a quiz webapp for various topics',
       gitLink: 'https://github.com/khush3718/QuizVista',
-      prodLink: "",
+      prodLink: "https://react-quiz-portal.netlify.app/",
       techStack: [
         'ReactJS',
         'JavaScript',
