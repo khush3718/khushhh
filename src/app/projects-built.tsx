@@ -39,6 +39,7 @@ const ProjectCard = ({
       className={clsx(
         'relative rounded-lg border-[1px] border-none bg-white/5 p-4',
         'transition-all duration-500 ease-out',
+        'shadow-lg',
         'hover:bg-white/10'
       )}
     >
@@ -86,9 +87,9 @@ const ProjectCard = ({
           size={28}
           color="#ffe4e64d"
           className={clsx(
-            'fill-rose-100/30',
+            'fill-neutral-500 dark:fill-rose-100/30',
             'transition-all duration-300 ease-out',
-            'group-hover:scale-[1.2] group-hover:fill-white'
+            'group-hover:scale-[1.2] group-hover:fill-black dark:group-hover:fill-white'
           )}
         />
       </NextLink>

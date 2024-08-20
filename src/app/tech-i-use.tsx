@@ -29,7 +29,7 @@ const TechCard = ({ title, Icon }: TechCardProps) => {
         'h-22 flex flex-col items-center justify-center space-y-2 font-sans1',
         'rounded-lg border-[1px] border-none bg-white/5 p-4 text-sm',
         'rounded-md shadow-md',
-        'hover:shadow-teal-500/40 active:translate-y-[2px]',
+        'hover:shadow-zinc-600 dark:hover:shadow-teal-500/40 active:translate-y-[2px]',
         'transition-all duration-300 ease-out'
       )}
     >

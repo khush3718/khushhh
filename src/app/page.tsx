@@ -138,7 +138,7 @@ function ExperienceSection({
   return (
     <section className="text-left">
       <h3 className="mb-1 text-xl font-medium">{title}</h3>
-      <hr className="mb-4 w-28  border-t-2 border-white rounded-full" />
+      <hr className="mb-4 w-28  border-t-2 border-neutral-700 dark:border-white rounded-full" />
 
       {items.map((item, index) => (
         <div key={index}>
@@ -251,20 +251,20 @@ export default function HomePage() {
       </div>
 
       <h3 className="mt-2 text-xl font-medium">projects</h3>
-      <hr className="mt-3 w-28 border-t-2 border-white rounded-full" />
+      <hr className="mt-3 w-28 border-t-2 border-neutral-700 dark:border-white rounded-full" />
       <div className="flex flex-col gap-2">
         <ThingsIveBuilt/>
       </div>
 
       <h3 className="mb-2 mt-6 text-xl font-medium">technologies i use</h3>
-      <hr className="mt-3 w-36 border-t-2 border-white rounded-full" />
+      <hr className="mt-3 w-36 border-t-2 border-neutral-700 dark:border-white rounded-full" />
       <div className="flex flex-col gap-2">
         <TechIUse/>
       </div>
       
 
       <h3 className="mt-8 text-xl font-medium">connect with me</h3>
-      <hr className="my-3 w-36 border-t-2 border-white rounded-full" />
+      <hr className="my-3 w-36 border-t-2 border-neutral-700 dark:border-white rounded-full" />
       <ul className="font-sm mt-4 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
           <a
