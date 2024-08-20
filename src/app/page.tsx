@@ -240,9 +240,8 @@ export default function HomePage() {
       </div>
 
       <p className="prose prose-neutral dark:prose-invert">
-        i&apos;m a 22 y/o developer who enjoys exploring various fields through machine learning, web development and i live on
-        the terminal. if i&apos;m not coding, i&apos;m probably listening to music,
-        watching movies or playing football.
+        i&apos;m a 22 y/o developer who enjoys exploring various fields through machine learning and web development. if i&apos;m not coding, i&apos;m probably listening to music,
+        reading mangas and novels or playing football.
       </p>
 
       <div className="my-8 grid grid-cols-1 gap-8 md:grid-cols-2">
