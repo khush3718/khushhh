@@ -1,4 +1,8 @@
 import { IoLogoNodejs } from 'react-icons/io5';
+import { CIcon } from '@coreui/icons-react';
+import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoFlask } from "react-icons/bi";
+import { SiLangchain } from "react-icons/si";
 import { SiNestjs } from 'react-icons/si';
 import {
   TbBrandTypescript,
@@ -20,6 +24,18 @@ import {
 
 export const techUsed = [
   {
+    title: 'Python',
+    Icon: TbBrandPython,
+  },
+  {
+    title: 'Flask',
+    Icon: BiLogoFlask,
+  },
+  {
+    title: 'Django',
+    Icon: TbBrandDjango,
+  },
+  {
     title: 'React',
     Icon: TbBrandReact,
   },
@@ -32,16 +48,12 @@ export const techUsed = [
     Icon: IoLogoNodejs,
   },
   {
-    title: 'SQL',
-    Icon: TbSql,
+    title: 'PostgreSQL',
+    Icon: BiLogoPostgresql,
   },
   {
     title: 'Javascript',
     Icon: TbBrandJavascript,
-  },
-  {
-    title: 'MongoDB',
-    Icon: TbBrandMongodb,
   },
   {
     title: 'Git',
@@ -49,16 +61,14 @@ export const techUsed = [
     Icon: TbBrandGit,
   },
   {
-    title: 'AWS',
+    title: 'Langchain',
 
-    Icon: TbBrandAws,
+    Icon: SiLangchain,
   },
-  {
-    title: 'Python',
-    Icon: TbBrandPython,
-  },
-  {
-    title: 'Django',
-    Icon: TbBrandDjango,
-  },
+  // {
+  //   title: 'AWS',
+
+  //   Icon: TbBrandAws,
+  // },
+  
 ];
