@@ -241,7 +241,7 @@ export default function HomePage() {
 
       <p className="prose prose-neutral dark:prose-invert">
         i&apos;m a 22 y/o developer who enjoys exploring various fields through machine learning and web development. if i&apos;m not coding, i&apos;m probably listening to music,
-        reading mangas and novels or playing football.
+        reading mangas and novels or watching football.
       </p>
 
       <div className="my-8 grid grid-cols-1 gap-8 md:grid-cols-2">
