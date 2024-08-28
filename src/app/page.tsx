@@ -224,18 +224,18 @@ export default function HomePage() {
   return (
     <main className="text-left">
       <h1 className="mb-4 text-2xl font-medium tracking-tighter font-mono1">
-        Khush Shah
+        khush shah
       </h1>
 
       <div className="mb-4 flex flex-col gap-1">
         <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300 font-mono1">
           <LocationIcon />
-          <p>Ahmedabad, India</p>
+          <p>ahmedabad, india</p>
         </div>
 
         <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300 font-mono1">
           <WorkIcon />
-          <p className="inline-flex">Junior Software Engineer @Adrta Tech</p>
+          <p className="inline-flex">junior software engineer @adrta tech</p>
         </div>
       </div>
 
