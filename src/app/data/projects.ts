@@ -6,11 +6,11 @@ export const projects = [
       gitLink: 'https://github.com/khush3718',
       prodLink: "https://react-quiz-portal.netlify.app/",
       techStack: [
-        'Python',
-        'PyTorch',
-        'NLP',
-        'Transformers',
-        'HuggingFace',
+        'python',
+        'pyTorch',
+        'nlp',
+        'transformers',
+        'huggingFace',
       ],
     },
     {
@@ -20,9 +20,9 @@ export const projects = [
       gitLink: 'https://github.com/khush3718/Real_Time_emotion_detection',
       prodLink: "https://react-quiz-portal.netlify.app/",
       techStack: [
-        'Python',
-        'OpenCV',
-        'TensorFlow',
+        'python',
+        'openCV',
+        'tensorflow',
       ],
     },
     {
@@ -31,8 +31,8 @@ export const projects = [
       gitLink: 'https://github.com/khush3718/QuizVista',
       prodLink: "https://react-quiz-portal.netlify.app/",
       techStack: [
-        'ReactJS',
-        'JavaScript',
+        'reactJS',
+        'javaScript',
       ],
     },
     {
@@ -42,7 +42,7 @@ export const projects = [
       gitLink: 'https://github.com/khush3718/Rocketify',
       prodLink: "https://react-quiz-portal.netlify.app/",
       techStack: [
-        'Python',
+        'python',
       ],
     },
     // {

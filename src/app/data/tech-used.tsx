@@ -24,45 +24,43 @@ import {
 
 export const techUsed = [
   {
-    title: 'Python',
+    title: 'python',
     Icon: TbBrandPython,
   },
   {
-    title: 'Flask',
+    title: 'flask',
     Icon: BiLogoFlask,
   },
   {
-    title: 'Django',
+    title: 'django',
     Icon: TbBrandDjango,
   },
   {
-    title: 'React',
+    title: 'react',
     Icon: TbBrandReact,
   },
   {
-    title: 'TailwindCSS',
+    title: 'tailwindCSS',
     Icon: TbBrandTailwind,
   },
   {
-    title: 'Node.js',
+    title: 'node.js',
     Icon: IoLogoNodejs,
   },
   {
-    title: 'PostgreSQL',
+    title: 'postgreSQL',
     Icon: BiLogoPostgresql,
   },
   {
-    title: 'Javascript',
+    title: 'javascript',
     Icon: TbBrandJavascript,
   },
   {
-    title: 'Git',
-
+    title: 'git',
     Icon: TbBrandGit,
   },
   {
-    title: 'Langchain',
-
+    title: 'langchain',
     Icon: SiLangchain,
   },
   // {
