@@ -34,6 +34,7 @@ import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 import { TechIUse } from "./tech-i-use";
 import { ViewTransitions } from "next-view-transitions";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://khushhh.vercel.app/"),
@@ -89,6 +90,7 @@ export default function RootLayout({
             {children}
             {/* <TechIUse/> */}
             {/* <Footer/> */}
+            <SpeedInsights/>
           </main>
         </body>
       </html>
