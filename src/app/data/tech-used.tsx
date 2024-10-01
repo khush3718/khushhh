@@ -19,7 +19,7 @@ import {
   TbBrandJavascript,
   TbBrandDjango,
   TbBrandAws,
-  TbSql
+  TbSql,
 } from 'react-icons/tb';
 
 export const techUsed = [
@@ -60,13 +60,12 @@ export const techUsed = [
     Icon: TbBrandGit,
   },
   {
-    title: 'langchain',
-    Icon: SiLangchain,
+    title: 'SQL server',
+    Icon: TbSql,
   },
-  // {
-  //   title: 'AWS',
-
-  //   Icon: TbBrandAws,
-  // },
+  {
+    title: 'nextJS',
+    Icon: TbBrandNextjs,
+  },
   
 ];

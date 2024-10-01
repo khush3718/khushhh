@@ -235,7 +235,7 @@ export default function HomePage() {
 
         <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300 font-mono1">
           <WorkIcon />
-          <p className="inline-flex">junior software engineer @adrta tech</p>
+          <p className="inline-flex">junior software engineer @ adrta tech</p>
         </div>
       </div>
 
