@@ -160,7 +160,19 @@ function ExperienceSection({
   );
 }
 
-
+function DownloadResumeLink() {
+  return (
+    <a
+      className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+      rel="noopener noreferrer"
+      target="_blank"
+      href="https://drive.google.com/file/d/1ZWSajRRmjq8n7WZdaS6TijkOZ5BOVRrd/view?usp=sharing"
+    >
+      <p className="mr-1 h-7">resume</p>
+      <UpRightArrowIcon />
+    </a>
+  );
+}
 
 
 export default function HomePage() {
@@ -309,6 +321,9 @@ export default function HomePage() {
             <p className="mr-1 h-7">linkedin</p>
             <UpRightArrowIcon />
           </a>
+        </li>
+        <li>
+          <DownloadResumeLink/>
         </li>
       </ul>
     </main>
