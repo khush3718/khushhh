@@ -3,7 +3,7 @@ import { TechIUse } from "./tech-i-use";
 import { ThingsIveBuilt } from "./projects-built";
 // import { getBlogPosts } from "~~/blog";
 
-export function UpRightArrowIcon() {
+function UpRightArrowIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

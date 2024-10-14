@@ -1,7 +1,6 @@
 // footer.tsx
 
 import React from 'react';
-import { UpRightArrowIcon } from './page';
 
 export const Footer = () => {
   return (
