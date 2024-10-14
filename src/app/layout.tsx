@@ -89,7 +89,7 @@ export default function RootLayout({
             
             {children}
             {/* <TechIUse/> */}
-            {/* <Footer/> */}
+            <Footer/>
             <SpeedInsights/>
           </main>
         </body>

@@ -3,7 +3,7 @@ import { TechIUse } from "./tech-i-use";
 import { ThingsIveBuilt } from "./projects-built";
 // import { getBlogPosts } from "~~/blog";
 
-function UpRightArrowIcon() {
+export function UpRightArrowIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +141,7 @@ export default function HomePage() {
     {
       name: "pandit deendayal energy university",
       link: "https://www.pdpu.ac.in/",
-      position: "b.tech in cse (2020-2024)",
+      position: "b.tech in comp. science (2020-2024)",
       description:"grade: 9.11 cgpa"
     },
   ] satisfies ExperienceItem[];
