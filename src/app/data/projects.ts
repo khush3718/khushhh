@@ -10,7 +10,7 @@ export const projects = [
         'pyTorch',
         'nlp',
         'transformers',
-        'huggingFace',
+        // 'huggingFace',
       ],
     },
     {
