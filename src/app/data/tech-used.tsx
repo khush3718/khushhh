@@ -51,10 +51,10 @@ export const techUsed = [
     title: 'postgreSQL',
     Icon: BiLogoPostgresql,
   },
-  {
-    title: 'javascript',
-    Icon: TbBrandJavascript,
-  },
+  // {
+  //   title: 'javascript',
+  //   Icon: TbBrandJavascript,
+  // },d
   {
     title: 'git',
     Icon: TbBrandGit,
