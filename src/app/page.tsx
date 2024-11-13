@@ -124,14 +124,14 @@ export default function HomePage() {
     {
       name: "adrta tech",
       link: "https://adrtatech.com/",
-      position: "jr. software engineer (june 2024 - present)",
+      position: "jr. software engineer ( june 2024 - present )",
       description:
         "working on building AI tools that can be integrated into company's various products",
     },
     {
       name: "let's enkindle",
       link: "https://letsenkindle.com/",
-      position: "app dev intern (june 2023 - aug 2023)",
+      position: "app dev intern ( june 2023 - aug 2023 )",
       description:
         "contributed in the deveopment of react native apps and improved the UI",
     },
@@ -141,7 +141,7 @@ export default function HomePage() {
     {
       name: "pandit deendayal energy university",
       link: "https://www.pdpu.ac.in/",
-      position: "b.tech in comp. science (2020-2024)",
+      position: "b.tech in comp. science ( 2020-2024 )",
       description:"grade: 9.11 cgpa"
     },
   ] satisfies ExperienceItem[];
