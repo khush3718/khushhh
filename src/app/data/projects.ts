@@ -14,6 +14,18 @@ export const projects = [
       ],
     },
     {
+      title: 'rag based q&A system',
+      description:
+        'q&a system made from scratch without using any frameworks or libraries like langchain and ollama.',
+      gitLink: 'https://github.com/khush3718/RAG-app',
+      prodLink: "https://react-quiz-portal.netlify.app/",
+      techStack: [
+        'python',
+        'postgreSQL',
+        'nlp',
+      ],
+    },
+    {
       title: 'real time emotion detection',
       description:
         'utilizes machine learning to analyze facial expressions, providing instantaneous emotion recognition',
@@ -23,18 +35,6 @@ export const projects = [
         'python',
         'openCV',
         'tensorflow',
-      ],
-    },
-    {
-      title: 'RAG based Q&A system',
-      description:
-        'q&a system made from scratch without using any frameworks or libraries like langchain and ollama.',
-      gitLink: 'https://github.com/khush3718/RAG-app',
-      prodLink: "https://react-quiz-portal.netlify.app/",
-      techStack: [
-        'python',
-        'postgreSQL',
-        'NLP',
       ],
     },
     {
