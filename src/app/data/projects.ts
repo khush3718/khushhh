@@ -26,6 +26,18 @@ export const projects = [
       ],
     },
     {
+      title: 'RAG based Q&A system',
+      description:
+        'q&a system made from scratch without using any frameworks or libraries like langchain and ollama.',
+      gitLink: 'https://github.com/khush3718/RAG-app',
+      prodLink: "https://react-quiz-portal.netlify.app/",
+      techStack: [
+        'python',
+        'postgreSQL',
+        'NLP',
+      ],
+    },
+    {
       title: 'quiz-vista',
       description: 'a quiz webapp for various topics',
       gitLink: 'https://github.com/khush3718/QuizVista',
@@ -35,16 +47,7 @@ export const projects = [
         'javaScript',
       ],
     },
-    {
-      title: 'rocketify',
-      description:
-        'terminal based app to simulate rocket launch into the orbit',
-      gitLink: 'https://github.com/khush3718/Rocketify',
-      prodLink: "https://react-quiz-portal.netlify.app/",
-      techStack: [
-        'python',
-      ],
-    },
+    
     // {
     //   title: 'anti-termo',
     //   description:
