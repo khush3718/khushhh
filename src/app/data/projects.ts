@@ -16,7 +16,7 @@ export const projects = [
     {
       title: 'rag based q&A system',
       description:
-        'q&a system made from scratch without using any frameworks or libraries like langchain and ollama.',
+        'q&a system made from scratch without using any frameworks or libraries like langchain and llamaindex.',
       gitLink: 'https://github.com/khush3718/RAG-app',
       prodLink: "https://react-quiz-portal.netlify.app/",
       techStack: [
