@@ -69,7 +69,7 @@ type ExperienceItem = {
   name: string;
   link: string;
   position: string;
-  description: string;
+  description: string | string[];
 };
 
 function ExperienceSection({
@@ -95,7 +95,15 @@ function ExperienceSection({
           </a>
           <p className="mt-2">{item.position}</p>
           <p className="mt-2 text-neutral-700 dark:text-neutral-300">
-            {item.description}
+             {Array.isArray(item.description) ? (
+              <ul className="list-disc list-inside space-y-1">
+                {item.description.map((desc, descIndex) => (
+                  <li key={descIndex}>{desc}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>{item.description}</p>
+            )}
           </p>
           {index !== items.length - 1 && <div className="mt-6"></div>}
         </div>
@@ -121,20 +129,17 @@ function DownloadResumeLink() {
 
 export default function HomePage() {
   const workItems = [
-    {
-      name: "adrta tech",
-      link: "https://adrtatech.com/",
-      position: "jr. software engineer ( june 2024 - present )",
-      description:
-        "working on building AI tools that can be integrated into company's various products",
-    },
-    {
-      name: "let's enkindle",
-      link: "https://letsenkindle.com/",
-      position: "app dev intern ( june 2023 - aug 2023 )",
-      description:
-        "contributed in the deveopment of react native apps and improved the UI",
-    },
+   {
+  name: "adrta tech",
+  link: "https://adrtatech.com/",
+  position: "jr. software engineer ( june 2024 - present )",
+  description: [
+    "Building AI tools that can be integrated into company's various products",
+    "developed a RFI agent that is capable of answering questions based on company's internal documents",
+    "improved the efficiency of codebase by 10% by refactoring and optimizing existing code",
+  ],
+},
+    
   ] satisfies ExperienceItem[];
 
   const educationItems = [
@@ -196,7 +201,7 @@ export default function HomePage() {
       </div>
 
       <p className="prose prose-neutral dark:prose-invert">
-        i&apos;m a 22 y/o developer who enjoys exploring various fields through machine learning and web development. when i&apos;m not coding, i&apos;m probably listening to music,
+        i&apos;m a 23 y/o developer who enjoys exploring various fields through machine learning and web development. when i&apos;m not coding, i&apos;m probably listening to music,
         reading mangas and novels or watching football.
       </p>
 

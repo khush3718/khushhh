@@ -1,4 +1,17 @@
 export const projects = [
+  {
+      title: 'RFI Agent',
+      description: 'a rag based RFI agent that can answer questions based on various documents from the pharma industry.',
+      gitLink: 'https://github.com/khush3718/QuizVista',
+      prodLink: "https://react-quiz-portal.netlify.app/",
+      techStack: [
+        'python',
+        'django',
+        'chromadb',
+        'azure openAI',
+        'reactjs',
+      ],
+    },
     {
       title: 'serene chat',
       description:
@@ -37,16 +50,7 @@ export const projects = [
         'tensorflow',
       ],
     },
-    {
-      title: 'quiz-vista',
-      description: 'a quiz webapp for various topics',
-      gitLink: 'https://github.com/khush3718/QuizVista',
-      prodLink: "https://react-quiz-portal.netlify.app/",
-      techStack: [
-        'reactJS',
-        'javaScript',
-      ],
-    },
+    
     
     // {
     //   title: 'anti-termo',
