@@ -1,28 +1,16 @@
 export const projects = [
-  {
-      title: 'RFI Agent',
-      description: 'a rag based RFI agent that can answer questions based on various documents from the pharma industry.',
-      gitLink: 'https://github.com/khush3718/QuizVista',
-      prodLink: "https://react-quiz-portal.netlify.app/",
-      techStack: [
-        'python',
-        'django',
-        'chromadb',
-        'azure openAI',
-        'reactjs',
-      ],
-    },
     {
-      title: 'serene chat',
+      title: 'TalentFlow - AI Resume Screener',
       description:
-        'llm based chatapp to assist users with their mental health issues',
-      gitLink: 'https://github.com/khush3718',
-      prodLink: "https://react-quiz-portal.netlify.app/",
+        'an AI-powered resume screening tool that automates the recruitment process by analyzing and shortlisting candidates based on job descriptions.',
+      gitLink: 'https://github.com/khush3718/TalentFlowAI',
+      prodLink: "https://talent-flow-ai-ui.vercel.app/",
       techStack: [
         'python',
-        'pyTorch',
-        'nlp',
-        'transformers',
+        'fastAPI',
+        'nextJS',
+        "typescript",
+        'google gemini',
         // 'huggingFace',
       ],
     },
@@ -39,15 +27,16 @@ export const projects = [
       ],
     },
     {
-      title: 'real time emotion detection',
+      title: 'Legal Document Analyzer',
       description:
-        'utilizes machine learning to analyze facial expressions, providing instantaneous emotion recognition',
-      gitLink: 'https://github.com/khush3718/Real_Time_emotion_detection',
+        'an AI-powered tool that analyzes legal documents to extract key information, identify clauses, and summarize content for easier understanding.',
+      gitLink: 'https://github.com/khush3718/LegalAI',
       prodLink: "https://react-quiz-portal.netlify.app/",
       techStack: [
         'python',
-        'openCV',
-        'tensorflow',
+        'fastAPI',
+        'chromaDB',
+        'google gemini',
       ],
     },
     
