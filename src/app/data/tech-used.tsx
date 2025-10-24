@@ -4,6 +4,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { BiLogoFlask } from "react-icons/bi";
 import { SiLangchain } from "react-icons/si";
 import { SiNestjs } from 'react-icons/si';
+import { SiFastapi } from 'react-icons/si';
 import {
   TbBrandTypescript,
   TbBrandNextjs,
@@ -66,6 +67,10 @@ export const techUsed = [
   {
     title: 'nextJS',
     Icon: TbBrandNextjs,
+  },
+  {
+    title: 'fastAPI',
+    Icon: SiFastapi,
   },
   
 ];
