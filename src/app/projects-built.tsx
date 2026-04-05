@@ -3,7 +3,6 @@ import NextLink from 'next/link';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
 
-import { Link } from './_components/link';
 import { projects } from './data/projects';
 
 export const ThingsIveBuilt = () => {
@@ -44,21 +43,22 @@ const ProjectCard = ({
       )}
     >
       <div className="flex flex-col space-y-3">
-        {prodLink ? (
-          <Link
-            href={prodLink}
-            external
-            // rightIcon={<FiExternalLink size={22} />}
-            size="lg"
-            className="w-fit font-semibold"
-          >
-            <span>{title}</span>
-          </Link>
-        ) : (
+        <div className="flex items-center gap-3">
           <p className="group flex w-fit items-center gap-2 text-lg font-semibold font-mono">
             <span>{title}</span>
           </p>
-        )}
+          {prodLink && (
+            <a
+              href={prodLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-medium text-emerald-400 ring-1 ring-inset ring-emerald-500/20 hover:bg-emerald-500/20 transition-colors duration-300"
+            >
+              <span>live</span>
+              <FiExternalLink size={12} />
+            </a>
+          )}
+        </div>
         <p className="text-base">{description}</p>
 
         <div className="flex flex-wrap items-center">

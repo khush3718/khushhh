@@ -70,6 +70,7 @@ type ExperienceItem = {
   link: string;
   position: string;
   description: string | string[];
+  logo?: string;
 };
 
 function ExperienceSection({
@@ -80,34 +81,46 @@ function ExperienceSection({
   items: ExperienceItem[];
 }) {
   return (
-    <section className="text-left">
+    <section className="text-left w-full">
       <h3 className="mb-1 text-xl font-medium">{title}</h3>
-      <hr className="mb-4 w-28  border-t-2 border-neutral-700 dark:border-white rounded-full" />
+      <hr className="mb-6 w-28 border-t-2 border-neutral-700 dark:border-white rounded-full" />
 
-      {items.map((item, index) => (
-        <div key={index}>
-          <a
-            href={item.link}
-            target="_blank"
-            className="font-medium underline decoration-neutral-400 decoration-[0.1em] underline-offset-2 dark:decoration-neutral-600"
-          >
-            {item.name}
-          </a>
-          <p className="mt-2">{item.position}</p>
-          <p className="mt-2 text-neutral-700 dark:text-neutral-300">
-             {Array.isArray(item.description) ? (
-              <ul className="list-disc list-inside space-y-1">
-                {item.description.map((desc, descIndex) => (
-                  <li key={descIndex}>{desc}</li>
-                ))}
-              </ul>
-            ) : (
-              <p>{item.description}</p>
+      <div className="flex flex-col gap-8">
+        {items.map((item, index) => (
+          <div key={index} className="flex gap-4 sm:gap-5">
+            {item.logo && (
+              <div className="flex-shrink-0 mt-1">
+                <img
+                  src={item.logo}
+                  alt={`${item.name} logo`}
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
+                />
+              </div>
             )}
-          </p>
-          {index !== items.length - 1 && <div className="mt-6"></div>}
-        </div>
-      ))}
+            <div className="flex-1">
+              <a
+                href={item.link}
+                target="_blank"
+                className="font-medium text-[1.05rem] underline decoration-neutral-400 decoration-[0.1em] underline-offset-2 dark:decoration-neutral-600 hover:decoration-neutral-700 dark:hover:decoration-neutral-300 transition-colors"
+              >
+                {item.name}
+              </a>
+              <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400 font-mono1">{item.position}</p>
+              <div className="mt-2 text-neutral-700 dark:text-neutral-300 text-[0.95rem]">
+                {Array.isArray(item.description) ? (
+                  <div className="flex flex-col space-y-1.5">
+                    {item.description.map((desc, descIndex) => (
+                      <p key={descIndex}>{desc}</p>
+                    ))}
+                  </div>
+                ) : (
+                  <p>{item.description}</p>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
@@ -118,7 +131,7 @@ function DownloadResumeLink() {
       className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
       rel="noopener noreferrer"
       target="_blank"
-      href="https://drive.google.com/file/d/1ZWSajRRmjq8n7WZdaS6TijkOZ5BOVRrd/view?usp=sharing"
+      href="https://drive.google.com/file/d/1_lJvWk8SEbAzqFcu39Xz1xkAf6oAID6d/view?usp=sharing"
     >
       <p className="mr-1 h-7">resume</p>
       <UpRightArrowIcon />
@@ -129,17 +142,25 @@ function DownloadResumeLink() {
 
 export default function HomePage() {
   const workItems = [
-   {
-  name: "adrta tech",
-  link: "https://adrtatech.com/",
-  position: "jr. software engineer ( june 2024 - present )",
-  description: [
-    "Building AI tools that can be integrated into company's various products",
-    "developed a RFI agent that is capable of answering questions based on company's internal documents",
-    "improved the efficiency of codebase by 10% by refactoring and optimizing existing code",
-  ],
-},
-    
+    {
+      name: "creole studios",
+      link: "https://www.creolestudios.com/",
+      position: "software engineer ( feb 2026 - present )",
+      description: [
+        "building and steering AI agents",
+      ],
+      logo: "/creole.png",
+    },
+    {
+      name: "adrta tech",
+      link: "https://adrtatech.com/",
+      position: "jr. software engineer ( june 2024 - feb 2026 )",
+      description: [
+        "built AI microservices that were integrated into company's various products",
+      ],
+      logo: "/adrta.png",
+    },
+
   ] satisfies ExperienceItem[];
 
   const educationItems = [
@@ -147,7 +168,8 @@ export default function HomePage() {
       name: "pandit deendayal energy university",
       link: "https://www.pdpu.ac.in/",
       position: "b.tech in comp. science ( 2020-2024 )",
-      description:"grade: 9.11 cgpa"
+      description: "grade: 9.11 cgpa",
+      logo: "/pdpu.jpg",
     },
   ] satisfies ExperienceItem[];
 
@@ -196,7 +218,7 @@ export default function HomePage() {
 
         <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300 font-mono1">
           <WorkIcon />
-          <p className="inline-flex">junior software engineer @ adrta tech</p>
+          <p className="inline-flex">software engineer @ creole studios</p>
         </div>
       </div>
 
@@ -205,24 +227,25 @@ export default function HomePage() {
         reading mangas and novels or watching football.
       </p>
 
-      <div className="my-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="my-8 sm:my-10">
         <ExperienceSection title="work" items={workItems} />
-        
-        <ExperienceSection title="education" items={educationItems} />
       </div>
 
       <h3 className="mt-2 text-xl font-medium">projects</h3>
       <hr className="mt-3 w-28 border-t-2 border-neutral-700 dark:border-white rounded-full" />
       <div className="flex flex-col gap-2">
-        <ThingsIveBuilt/>
+        <ThingsIveBuilt />
       </div>
 
       <h3 className="mb-2 mt-6 text-xl font-medium">technologies i use</h3>
       <hr className="mt-3 w-36 border-t-2 border-neutral-700 dark:border-white rounded-full" />
       <div className="flex flex-col gap-2">
-        <TechIUse/>
+        <TechIUse />
       </div>
-      
+
+      <div className="my-8 sm:my-10">
+        <ExperienceSection title="education" items={educationItems} />
+      </div>
 
       <h3 className="mt-8 text-xl font-medium">connect with me</h3>
       <hr className="my-3 w-36 border-t-2 border-neutral-700 dark:border-white rounded-full" />
@@ -272,7 +295,7 @@ export default function HomePage() {
           </a>
         </li>
         <li>
-          <DownloadResumeLink/>
+          <DownloadResumeLink />
         </li>
       </ul>
     </main>

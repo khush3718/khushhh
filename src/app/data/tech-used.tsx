@@ -5,6 +5,9 @@ import { BiLogoFlask } from "react-icons/bi";
 import { SiLangchain } from "react-icons/si";
 import { SiNestjs } from 'react-icons/si';
 import { SiFastapi } from 'react-icons/si';
+import { SiAnthropic } from "react-icons/si";
+import { SiOpenai } from "react-icons/si";
+import { SiGooglegemini } from "react-icons/si";
 import {
   TbBrandTypescript,
   TbBrandNextjs,
@@ -21,6 +24,7 @@ import {
   TbBrandDjango,
   TbBrandAws,
   TbSql,
+  TbBrandVercel
 } from 'react-icons/tb';
 
 export const techUsed = [
@@ -37,17 +41,33 @@ export const techUsed = [
     Icon: TbBrandDjango,
   },
   {
+    title: 'gemini',
+    Icon: SiGooglegemini,
+  },
+  {
+    title: 'claude',
+    Icon: SiAnthropic,
+  },
+  {
+    title: 'gpt',
+    Icon: SiOpenai,
+  },
+  {
     title: 'react',
     Icon: TbBrandReact,
   },
   {
-    title: 'tailwindCSS',
-    Icon: TbBrandTailwind,
+    title: 'vercel',
+    Icon: TbBrandVercel,
   },
-  {
-    title: 'node.js',
-    Icon: IoLogoNodejs,
-  },
+  // {
+  //   title: 'tailwindCSS',
+  //   Icon: TbBrandTailwind,
+  // },
+  // {
+  //   title: 'node.js',
+  //   Icon: IoLogoNodejs,
+  // },
   {
     title: 'postgreSQL',
     Icon: BiLogoPostgresql,
@@ -60,10 +80,10 @@ export const techUsed = [
     title: 'git',
     Icon: TbBrandGit,
   },
-  {
-    title: 'SQL server',
-    Icon: TbSql,
-  },
+  // {
+  //   title: 'SQL server',
+  //   Icon: TbSql,
+  // },
   {
     title: 'nextJS',
     Icon: TbBrandNextjs,
@@ -72,5 +92,5 @@ export const techUsed = [
     title: 'fastAPI',
     Icon: SiFastapi,
   },
-  
+
 ];
